@@ -15,7 +15,7 @@
         header {
             padding-top: 30px;
             min-height: 70px;
-            border-bottom: #77aaff 3px solid;
+            border-bottom: var(--bs-primary) 3px solid;
         }
         header ul {
             list-style: none;
@@ -35,6 +35,7 @@
         .title h1 {
             text-transform: uppercase;
             font-weight: 900;
+            color: var(--bs-primary);
         }
         .contact {
             flex-shrink: 0;
@@ -49,9 +50,11 @@
             margin-bottom: 20px;
         }
         .section h3 {
-            border-bottom: #77aaff 2px solid;
-            padding-bottom: 10px;
+            border-left: var(--bs-primary) 8px solid;
+            color: var(--bs-primary);
+            padding-left: 10px;
             text-transform: uppercase;
+            font-weight: 700;
         }
         .section ul {
             list-style: none;
@@ -59,6 +62,10 @@
         }
         .section ul li {
             padding: 5px 0;
+        }
+        .experience-title {
+            display: flex;
+            gap: 10px;
         }
     </style>
 </head>
@@ -92,10 +99,12 @@
             <h3>Experience <i class="bi bi-briefcase"></i></h3>
             <ul>
                 <li>
-                    <h5>Lead Software Engineer</h5>
-                    <p>LSEG (London Stock Exchange Group)</p>
-                    <p>Feb 2021 - Dec 2024 · 3 yrs 11 mos</p>
-                    <p>Paris, Île-de-France, France · Hybrid.</p>
+                    <div class="experience-title">
+                        <h5>Lead Software Engineer</h5>
+                        <a href="https://www.lseg.com">LSEG</a>
+                        <p>2021 - 2024</p>
+                        <p>Paris (hybrid)</p>
+                    </div>
                     <p>Lead Software Engineer in News team (continuation from Refinitiv)
                       <ul>
                         <li>typescript, Angular, nodejs, AWS, docker</li>
@@ -103,10 +112,12 @@
                       </ul></p>
                 </li>
                 <li>
-                    <h5>Software Engineer</h5>
-                    <p>Refinitiv</p>
-                    <p>Oct 2018 - Feb 2021 · 2 yrs 5 mos</p>
-                    <p>Paris, Île-de-France, France · Hybrid.</p>
+                    <div class="experience-title">
+                        <h5>Software Engineer</h5>
+                        <a href="https://fr.wikipedia.org/wiki/Refinitiv">Refinitiv</a>
+                        <p>2018 - 2021</p>
+                        <p>Paris (hybrid)</p>
+                    </div>
                     <p>Software Engineer in News team (continuation from Thomson Reuters)
                       <ul>
                         <li>typescript, Angular, Docker, AWS, nodejs, gitlab CI</li>
@@ -114,10 +125,12 @@
                       </ul></p>
                 </li>
                 <li>
+                    <div class="experience-title">
                       <h5>Software Engineer</h5>
-                      <p>Thomson Reuters</p>
-                      <p>Jul 2008 - Oct 2018 · 10 yrs 4 mos</p>
-                      <p>Paris, Île-de-France, France · On-site.</p>
+                      <a href="https://www.thomsonreuters.com">Thomson Reuters</a>
+                      <p>2008 - 2018</p>
+                      <p>Puteaux (on-site)</p>
+                    </div>
                       <p>Software Engineer in the calculators framework team (for 5 years)
                         <ul>
                           <li>C++, C#, COM, javascript, IIS, IE</li>
@@ -134,10 +147,12 @@
                         </ul></p>
                   </li>
                   <li>
+                      <div class="experience-title">
                         <h5>Software Engineer</h5>
-                        <p>ENSEA - University Cergy-Pontoise -CNRS</p>
-                        <p>Oct 2007 - Apr 2008 · 7 mos</p>
-                        <p>Cergy-Pontoise, Île-de-France, France · On-site.</p>
+                        <div><a href="https://www.ensea.fr">ENSEA</a>/<a href="https://www.cnrs.fr">CNRS</a></div>
+                        <p>2007 - 2008</p>
+                        <p>Cergy-Pontoise (on-site)</p>
+                      </div>
                         <p>Development of a search framework for image and 3D model retrieval in C++ (with QT).
                           <ul>
                             <li>Improved the framework for interactive search</li>
@@ -148,10 +163,12 @@
                           </ul></p>
                     </li>
                     <li>
-                        <h5>Software Engineer</h5>
-                        <p>LIP6</p>
-                        <p>Mar 2007 - Aug 2007 · 6 mos</p>
-                        <p>Paris, France · On-site.</p>
+                        <div class="experience-title">
+                            <h5>Software Engineer</h5>
+                            <a href="https://www.lip6.fr">LIP6</a>
+                            <p>2007 (6 months)</p>
+                            <p>Paris (on-site)</p>
+                        </div>
                         <p>Development of a search framework for image retrieval with textual and visual queries [C++ (with QT), mySQL and python].
                           <ul>
                             <li>Re-factoring and porting of a search framework for image identification. [from java to C++ (with QT)]</li>
@@ -161,10 +178,12 @@
                           </ul></p>
                     </li>
                     <li>
-                        <h5>Software Engineer</h5>
-                        <p>ENSEA - University Cergy-Pontoise -CNRS</p>
-                        <p>Mar 2006 - Mar 2007 · 1 yr 1 mo</p>
-                        <p>Cergy-Pontoise, Île-de-France, France · On-site.</p>
+                        <div class="experience-title">
+                            <h5>Software Engineer</h5>
+                            <div><a href="https://www.ensea.fr">ENSEA</a>/<a href="https://www.cnrs.fr">CNRS</a></div>
+                            <p>2006 - 2007</p>
+                            <p>Cergy-Pontoise (on-site)</p>
+                        </div>
                         <p>Development of a search framework for image retrieval and 3D model retrieval in C++ (with QT).
                           <ul>
                             <li>Studied bibliography on 3D objects indexing methods</li>
@@ -176,10 +195,12 @@
                           </ul></p>
                     </li>
                     <li>
-                        <h5>Stage</h5>
-                        <p>ENSEA - University Cergy-Pontoise -CNRS</p>
-                        <p>Apr 2005 - Sep 2005 · 6 mos</p>
-                        <p>Cergy-Pontoise, Île-de-France, France · On-site.</p>
+                        <div class="experience-title">
+                            <h5>Stage</h5>
+                            <a href="https://www.ensea.fr">ENSEA</a>
+                            <p>2005 (6 months)</p>
+                            <p>Cergy-Pontoise (on-site)</p>
+                        </div>
                         <p>Development of an interactive image search system.
                           <ul>
                             <li>Studied bibliography on relevance feedback methods in content based image retrieval</li>
