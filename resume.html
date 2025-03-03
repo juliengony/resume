@@ -63,10 +63,25 @@
         .experience-title {
             display: flex;
             gap: 10px;
-            align-items: center;
+            align-items: baseline;
+            flex-wrap: wrap;
         }
-        .experience-title h6 {
+        .experience-title h5 {
             margin-bottom: 0;
+            flex-grow: 1;
+        }
+        .experience-title-sub {
+            display: flex;
+            gap: 5px;
+            align-items: baseline;
+            flex-wrap: no;
+        }
+        .experience-title-sub a {
+            font-weight: 600;
+        }
+        .experience-title-sub div {
+            font-style: italic;
+            color: var(--bs-secondary-color);
         }
     </style>
 </head>
@@ -101,10 +116,12 @@
             <ul>
                 <li>
                     <div class="experience-title">
-                        <h6>Lead Software Engineer</h6>
-                        <a href="https://www.lseg.com">LSEG</a>
-                        <div>2021 - 2024</div>
-                        <div>Paris (hybrid)</div>
+                        <h5>Lead Software Engineer</h5>
+                        <div class="experience-title-sub">
+                            <a href="https://www.lseg.com">LSEG</a>
+                            <div>2021 - 2024</div>
+                            <div>Paris (hybrid)</div>    
+                        </div>
                     </div>
                     <p>Lead Software Engineer in News team (continuation from Refinitiv)
                       <ul>
@@ -114,10 +131,12 @@
                 </li>
                 <li>
                     <div class="experience-title">
-                        <h6>Software Engineer</h6>
-                        <a href="https://fr.wikipedia.org/wiki/Refinitiv">Refinitiv</a>
-                        <div>2018 - 2021</div>
-                        <div>Paris (hybrid)</div>
+                        <h5>Software Engineer</h5>
+                        <div class="experience-title-sub">
+                            <a href="https://fr.wikipedia.org/wiki/Refinitiv">Refinitiv</a>
+                            <div>2018 - 2021</div>
+                            <div>Paris (hybrid)</div>
+                        </div>
                     </div>
                     <p>Software Engineer in News team (continuation from Thomson Reuters)
                       <ul>
@@ -127,10 +146,12 @@
                 </li>
                 <li>
                     <div class="experience-title">
-                      <h6>Software Engineer</h6>
-                      <a href="https://www.thomsonreuters.com">Thomson Reuters</a>
-                      <div>2008 - 2018</div>
-                      <div>Puteaux (on-site)</div>
+                      <h5>Software Engineer</h5>
+                        <div class="experience-title-sub">
+                          <a href="https://www.thomsonreuters.com">Thomson Reuters</a>
+                          <div>2008 - 2018</div>
+                          <div>Puteaux (on-site)</div>
+                        </div>
                     </div>
                       <p>Software Engineer in the calculators framework team (for 5 years)
                         <ul>
@@ -149,10 +170,12 @@
                   </li>
                   <li>
                       <div class="experience-title">
-                        <h6>Software Engineer</h6>
-                        <div><a href="https://www.ensea.fr">ENSEA</a>/<a href="https://www.cnrs.fr">CNRS</a></div>
-                        <div>2007 - 2008</div>
-                        <div>Cergy-Pontoise (on-site)</div>
+                        <h5>Software Engineer</h5>
+                          <div class="experience-title-sub">
+                            <div><a href="https://www.ensea.fr">ENSEA</a>/<a href="https://www.cnrs.fr">CNRS</a></div>
+                            <div>2007 - 2008</div>
+                            <div>Cergy-Pontoise (on-site)</div>
+                          </div>
                       </div>
                         <p>Development of a search framework for image and 3D model retrieval in C++ (with QT).
                           <ul>
@@ -165,10 +188,12 @@
                     </li>
                     <li>
                         <div class="experience-title">
-                            <h6>Software Engineer</h6>
-                            <a href="https://www.lip6.fr">LIP6</a>
-                            <div>2007 (6 months)</div>
-                            <div>Paris (on-site)</div>
+                            <h5>Software Engineer</h5>
+                            <div class="experience-title-sub">
+                                <a href="https://www.lip6.fr">LIP6</a>
+                                <div>2007 (6 months)</div>
+                                <div>Paris (on-site)</div>
+                            </div>
                         </div>
                         <p>Development of a search framework for image retrieval with textual and visual queries [C++ (with QT), mySQL and python].
                           <ul>
@@ -180,10 +205,12 @@
                     </li>
                     <li>
                         <div class="experience-title">
-                            <h6>Software Engineer</h6>
-                            <div><a href="https://www.ensea.fr">ENSEA</a>/<a href="https://www.cnrs.fr">CNRS</a></div>
-                            <div>2006 - 2007</div>
-                            <div>Cergy-Pontoise (on-site)</div>
+                            <h5>Software Engineer</h5>
+                            <div class="experience-title-sub">
+                                <div><a href="https://www.ensea.fr">ENSEA</a>/<a href="https://www.cnrs.fr">CNRS</a></div>
+                                <div>2006 - 2007</div>
+                                <div>Cergy-Pontoise (on-site)</div>
+                            </div>
                         </div>
                         <p>Development of a search framework for image retrieval and 3D model retrieval in C++ (with QT).
                           <ul>
@@ -197,10 +224,12 @@
                     </li>
                     <li>
                         <div class="experience-title">
-                            <h6>Stage</h6>
-                            <a href="https://www.ensea.fr">ENSEA</a>
-                            <div>2005 (6 months)</div>
-                            <div>Cergy-Pontoise (on-site)</div>
+                            <h5>Stage</h5>
+                            <div class="experience-title-sub">
+                                <a href="https://www.ensea.fr">ENSEA</a>
+                                <div>2005 (6 months)</div>
+                                <div>Cergy-Pontoise (on-site)</div>
+                            </div>
                         </div>
                         <p>Development of an interactive image search system.
                           <ul>
@@ -216,13 +245,13 @@
             <h4>Education <i class="bi bi-backpack"></i></h4>
             <ul>
                 <li>
-                    <h6>Master's Degree in Computer Science</h6>
+                    <h5>Master's Degree in Computer Science</h5>
                     <p>Pierre and Marie Curie University</p>
                     <p>2004 - 2005</p>
                     <p>IAD (Artificial Intelligence and Decision) for MIS (Multimedia, Image and Sound)</p>
                 </li>
                 <li>
-                    <h6>DEUG, Licence, Maitrise in Computer Science</h6>
+                    <h5>DEUG, Licence, Maitrise in Computer Science</h5>
                     <p>Cergy-Pontoise University</p>
                     <p>2000 - 2004</p>
                 </li>
