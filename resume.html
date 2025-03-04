@@ -62,7 +62,7 @@
             text-transform: uppercase;
             font-weight: 700;
         }
-        .experience {
+        .experiences {
             flex-grow: 1;
         }
         .aside {
@@ -96,6 +96,16 @@
             .container {
                 width: 100% !important;
                 max-width: 100% !important;
+                font-size: 15px;
+            }
+            .navbar {
+                display: none;
+            }
+            ul, li, h4, h5 .experience-title, .aside, {
+                page-break-after: avoid;
+            }
+            .experience, .section {
+                page-break-after: auto;
             }
         }
     </style>
@@ -134,9 +144,9 @@
         Finally fullstack development and technical ownership of a critical application.
         </div>
     <div class="container main sections">
-        <section class="section experience">
+        <section class="section experiences">
             <h4>Experience <i class="bi bi-briefcase"></i></h4>
-            <div>
+            <div class="experience">
                 <div>
                     <div class="experience-title">
                         <h5>Lead Software Engineer</h5>
@@ -155,7 +165,7 @@
                       <li>Typescript, Angular, Nodejs, AWS, Docker, Gitlab CI, Xstate.</li>
                   </ul>
                 </div>
-                <div>
+                <div class="experience">
                     <div class="experience-title">
                         <h5>Software Engineer</h5>
                         <div class="experience-title-sub">
@@ -173,7 +183,7 @@
                       <li>Typescript, Angular, Nodejs, AWS, Docker, Gitlab CI, Selenium.</li>
                   </ul>
                 </div>
-                <div>
+                <div class="experience">
                     <div class="experience-title">
                       <h5>Software Engineer</h5>
                         <div class="experience-title-sub">
@@ -195,7 +205,8 @@
                         <li>Software Engineer in the calculators framework team (2008 - 2013).</li>
                         <li>C++, C#/.NET, Windows.</li>
                     </ul>
-                  <div>
+                </div>
+                  <div class="experience">
                       <div class="experience-title">
                         <h5>Software Engineer</h5>
                           <div class="experience-title-sub">
@@ -215,7 +226,8 @@
                             <li>Documentation of the framework, and the various modules based on it.</li>
                             <li>C++, QT, MySQL, LateX, Linux.</li>
                           </ul>
-                    <div>
+                  </div>
+                    <div class="experience">
                         <div class="experience-title">
                             <h5>Software Engineer</h5>
                             <div class="experience-title-sub">
@@ -235,7 +247,7 @@
                             <li>C++, QT, MySQL, Python, Java, LateX, Linux.</li>
                           </ul>
                     </div>
-                    <div>
+                    <div class="experience">
                         <div class="experience-title">
                             <h5>Software Engineer</h5>
                             <div class="experience-title-sub">
@@ -257,7 +269,7 @@
                             <li>C++, QT, LateX, Linux.</li>
                           </ul>
                     </div>
-                    <div>
+                    <div class="experience">
                         <div class="experience-title">
                             <h5>Internship</h5>
                             <div class="experience-title-sub">
