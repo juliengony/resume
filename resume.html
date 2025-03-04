@@ -101,11 +101,13 @@
             .navbar {
                 display: none;
             }
-            ul, li, h4, h5 .experience-title, .aside, {
-                page-break-after: avoid;
+            ul, li, h4, h5, .experience-title, .aside {
+                break-after: avoid;
+                break-inside: avoid;
             }
             .experience, .section {
-                page-break-after: auto;
+                break-after: auto;
+                break-inside: avoid;
             }
         }
     </style>
