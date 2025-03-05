@@ -90,6 +90,13 @@
             font-style: italic;
             color: var(--bs-secondary-color);
         }
+
+        @media (min-width: 576px) {
+            .nav-item-text {
+                display: none;
+            }
+        }
+        
         @media print {
             .container {
                 width: 100% !important;
@@ -140,13 +147,23 @@
 " height="80px"/>
             </section>
         </div>
-        <nav class="navbar navbar-expand-sm">
+        <nav class="navbar navbar-expand">
             <ul class="navbar-nav">
-                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
-                <li class="nav-item"><a href="#interests" class="nav-link">Interests</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">
+                    <i class="bi bi-briefcase"></i>
+                    <span class="nav-item-text">Experience</span></a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">
+                    <i class="bi bi-backpack"></i>
+                    <span class="nav-item-text">Education</span></a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">
+                    <i class="bi bi-book"></i>
+                    <span class="nav-item-text">Skills</span></a></li>
+                <li class="nav-item"><a href="#languages" class="nav-link">
+                    <i class="bi bi-translate">
+                    <span class="nav-item-text">Languages</span></a></li>
+                <li class="nav-item"><a href="#interests" class="nav-link">
+                    <i class="bi bi-emoji-heart-eyes"></i>
+                    <span class="nav-item-text">Interests</span></a></li>
             </ul>
         </nav>
     </header>
